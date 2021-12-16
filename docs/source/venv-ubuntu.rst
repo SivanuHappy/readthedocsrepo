@@ -6,7 +6,7 @@ VirtualBox is a tool which allows you to run different operating systems virtual
 Install VirtualBox
 ---------------------
 
-1. In order to install VirtualBox, `follow this link <https://www.virtualbox.org/wiki/Downloads>`_
+1. In order to install VirtualBox, `follow this link <https://www.virtualbox.org/wiki/Downloads>`_.
 2. Under “VirtualBox 6.1.28 platform packages”, select the Windows host download link.
 3. Open VirtualBox.
 
@@ -14,7 +14,7 @@ Download Ubuntu ISO file
 ------------------------------------
 
 1. For the purposes of this document I will be utilizing Ubuntu 20.04, although 18.04 is recommended.
-2. Follow this link.
+2. `Follow this link <https://ubuntu.com/#download>`_.
 3. Under the "Download" button select "20.04 LTS".
 
 Set Up Ubuntu virtual machine in VirtualBox
