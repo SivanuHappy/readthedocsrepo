@@ -68,6 +68,7 @@ Open your virtual machine
 (Optional) Install VirtualBox Guest Additions
 ------------------------------------------------------
 This software will allow your VirtualBox virtual machine to properly maximize on your screen.
+
 1. Open Terminal.
 2. Give command: sudo apt install build-essential dkms linux-headers-$(uname -r).
 3. Provide your password.
