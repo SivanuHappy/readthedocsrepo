@@ -6,7 +6,7 @@ VirtualBox is a tool which allows you to run different operating systems virtual
 Install VirtualBox
 ---------------------
 
-1. In order to install VirtualBox, follow this <https://github.com/signup>`_.
+1. In order to install VirtualBox, follow this (you can `register for a free account <https://github.com/signup>`_ if you don't have one).
 2. Under “VirtualBox 6.1.28 platform packages”, select the Windows host download link.
 3. Open VirtualBox.
 
