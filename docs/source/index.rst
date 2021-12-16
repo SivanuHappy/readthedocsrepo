@@ -1,7 +1,4 @@
- steps to set up a virtual Ubuntu environment on a Windows host operating system via VirtualBox
-===================================
-
-Usage
+Steps to set up a virtual Ubuntu environment on a Windows host operating system via VirtualBox
 =====
 
 .. _installation:
@@ -9,44 +6,6 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
-
-.. code-block:: console
-
-   (.venv) $ pip install lumache
-
-Creating recipes
-----------------
-
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
-
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
-
-
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
-
-.. note::
-
-   This project is under active development.
 
 Contents
 --------
@@ -58,17 +17,24 @@ Contents
 My change
 -------------
 
-# Step 1: Install VirtualBox
+Install VirtualBox
+---------------------
+
 VirtualBox is a tool which allows you to run different operating systems virtually on your host operating system. This is referred to as a virtual machine.
+
 1. In order to install VirtualBox, follow this link.
 2. Under “VirtualBox 6.1.28 platform packages”, select the Windows host download link.
 3. Open VirtualBox.
 
-# Step 2: Download Ubuntu ISO file
-For the purposes of this document I will be utilizing Ubuntu 20.04, although 18.04 is recommended.
-Follow this link.
-Under the "Download" button select "20.04 LTS".
-Step 3: Set Up Ubuntu virtual machine in VirtualBox
+Download Ubuntu ISO file
+------------------------------------
+
+1. For the purposes of this document I will be utilizing Ubuntu 20.04, although 18.04 is recommended.
+2. Follow this link.
+3. Under the "Download" button select "20.04 LTS".
+
+Set Up Ubuntu virtual machine in VirtualBox
+--------------------------------------------
 Open VirtualBox.
 Click the "New" button.
 Provide the name of your new machine (I recommend the name Ubuntu 20.04).
@@ -86,7 +52,9 @@ Select "Next".
 Choose "File Location".
 Choose virtual hard disk size (I recommend around 100GB).
 Click "Create".
-Step 4: Configure Settings for Ubuntu virtual Machine
+
+Configure Settings for Ubuntu virtual Machine
+----------------------------------------------
 Select your machine.
 Select "Settings".
 Under "General", click "Advanced Settings". Select "Bidirectional" for both shared clipboard and drag and drop fields. This will allow you to share files between host machine and Ubuntu machine.
@@ -110,7 +78,9 @@ Wait for installation to complete.
 Click "Restart Now".
 Log in to the user that you created.
 Follow Setup Instructions provided by the OS.
-Step 6: (Optional) Install VirtualBox Guest Additions
+
+(Optional) Install VirtualBox Guest Additions
+------------------------------------------------------
 This software will allow your VirtualBox virtual machine to properly maximize on your screen.
 Open Terminal.
 Give command: sudo apt install build-essential dkms linux-headers-$(uname -r).
